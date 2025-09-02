@@ -21,7 +21,7 @@ yelp.head(1)
 
 plt.figure(figsize=(10,4))
 
-g=sns.FacetGrid(data=yelp, row='stars')
+g=sns.FacetGrid(data=yelp, col='stars')
 g.map(plt.hist,'text length')
 plt.show()
 
