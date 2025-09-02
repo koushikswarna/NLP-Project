@@ -10,13 +10,13 @@ yelp=pd.read_csv('yelp.csv')
 
 #1. Exploratory Data Analysis
 
-yelp.head()
-yelp.info()
-yelp.describe()
+print(yelp.head())
+print(yelp.info())
+print(yelp.describe())
 
 yelp['text length']=yelp['text'].apply(len)
 
-yelp.head(1)
+print(yelp.head(1))
 
 
 plt.figure(figsize=(10,4))
@@ -49,7 +49,7 @@ plt.show()
 yelp_class=yelp[(yelp['stars']==1)|(yelp['stars']==5)]
 
 
-yelp_class.head()
+print(yelp_class.head())
 
 x=yelp_class['text']
 y=yelp_class['stars']
